@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponseActivity">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/textViewTitle"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Submission Details"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:paddingBottom="16dp"/>
+
+         <TableLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="1"> <!-- Ensures the second column takes available space -->
+
+            <!-- Row for Q1 -->
+            <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Q1:"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+
+               <TextView
+                   android:id="@+id/textViewQ1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+            </TableRow>
+
+            <!-- Row for Q2 -->
+            <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Q2:"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+
+               <TextView
+                   android:id="@+id/textViewQ2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+            </TableRow>
+
+<!--            &lt;!&ndash; Row for Q3 &ndash;&gt;-->
+<!--            <TableRow>-->
+<!--               <TextView-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:text="Q3:"-->
+<!--                   android:textSize="16sp"-->
+<!--                   android:padding="8dp" />-->
+
+<!--               <TextView-->
+<!--                   android:id="@+id/textViewQ3"-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:textSize="16sp"-->
+<!--                   android:padding="8dp" />-->
+<!--            </TableRow>-->
+
+            <!-- Row for Recording -->
+            <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Recording:"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+
+               <TextView
+                   android:id="@+id/textViewRecording"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+            </TableRow>
+
+            <!-- Row for GPS -->
+            <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="GPS:"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+
+               <TextView
+                   android:id="@+id/textViewGPS"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+            </TableRow>
+
+            <!-- Row for Submission Time -->
+            <TableRow>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Submission Time:"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+
+               <TextView
+                   android:id="@+id/textViewSubmitTime"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:padding="8dp" />
+            </TableRow>
+
+         </TableLayout>
+
+      </LinearLayout>
+   </ScrollView>

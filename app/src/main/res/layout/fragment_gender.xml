@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GenderFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearAgeLayout"
+        android:orientation="vertical"
+        android:background="#9BDFFF"
+        android:padding="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1 :- Select your Gender. "
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/ageQus" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinGender"
+            android:entries="@array/gender_options"/>
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:backgroundTint="#E53935"
+        android:padding="15dp"
+        android:id="@+id/btnPrev"
+        app:layout_constraintStart_toStartOf="@id/linearAgeLayout"
+        app:layout_constraintTop_toBottomOf="@id/linearAgeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="#43A047"
+        android:padding="15dp"
+        android:id="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="@id/linearAgeLayout"
+        app:layout_constraintTop_toBottomOf="@id/linearAgeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

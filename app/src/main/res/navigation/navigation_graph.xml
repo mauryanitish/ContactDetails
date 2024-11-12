@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph.xml"
+    app:startDestination="@id/genderFragment">
+
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.nitish.contactdetails.GenderFragment"
+        android:label="fragment_gender"
+        tools:layout="@layout/fragment_gender" >
+        <action
+            android:id="@+id/action_genderFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.nitish.contactdetails.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age" >
+        <action
+            android:id="@+id/action_ageFragment_to_submmissionFragment"
+            app:destination="@id/submmissionFragment" />
+        <action
+            android:id="@+id/action_ageFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfiFragment"
+        android:name="com.nitish.contactdetails.SelfiFragment"
+        android:label="fragment_selfi"
+        tools:layout="@layout/fragment_selfi" />
+    <fragment
+        android:id="@+id/submmissionFragment"
+        android:name="com.nitish.contactdetails.SubmmissionFragment"
+        android:label="fragment_submmission"
+        tools:layout="@layout/fragment_submmission" />
+</navigation>
